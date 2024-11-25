@@ -16,7 +16,7 @@ const Row = (props) => {
       try {
         // console.log("fetchurl",fetchUrl)
         const request = await axios.get(fetchUrl);
-        // console.log(request)
+        // console.log("request",request)
         setMovie(request.data.results);
       } catch (error) {
         console.log("error", error);
